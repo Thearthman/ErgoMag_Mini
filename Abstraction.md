@@ -15,7 +15,8 @@
 ## Schematic Design  
 1. Would require [Circuitry Design](#circuitry-design) to be done first.  
 2. Design the schematic using a circuit design software.  
-
+## REMINDER
+- AREA under a magnetic switch should not have copper.
 
 # Circuitry Design  
 1. Test run the Circuitry on a RP2040 board to and find latency and noise issues.  
