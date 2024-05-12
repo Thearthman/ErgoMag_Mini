@@ -12,6 +12,7 @@ uint current_multipler_address = 0;
 float max_travel[4][16];
 
 
+
 float readChannel(uint8_t multiplexer_address, uint8_t channel) {
 
    for (int i = 0; i < 4; i++) {
@@ -66,7 +67,7 @@ int main() {
       // printf("Voltage3: %f\n", voltage3);
       // printf("Max Travel: %f\n", max_travel);
 
-      if ( voltage1 > threshold) {
+      if (voltage0 < max_travel[1][0]*0.8 || voltage1 < max_travel[1][1]*0.8 || voltage2 < max_travel[1][2]*0.8 || voltage3 < max_travel[1][3]*0.8 ) {
          gpio_put (led_pin, 1);
       } else {
          gpio_put (led_pin, 0); 
