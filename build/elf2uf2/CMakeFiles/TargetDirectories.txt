@@ -1,0 +1,5 @@
+L:/Work_and_Homework/Work/Personal/ErgoMag/ErgoMag_Mini/build/elf2uf2/CMakeFiles/elf2uf2.dir
+L:/Work_and_Homework/Work/Personal/ErgoMag/ErgoMag_Mini/build/elf2uf2/CMakeFiles/edit_cache.dir
+L:/Work_and_Homework/Work/Personal/ErgoMag/ErgoMag_Mini/build/elf2uf2/CMakeFiles/rebuild_cache.dir
+L:/Work_and_Homework/Work/Personal/ErgoMag/ErgoMag_Mini/build/elf2uf2/boot_uf2_headers/CMakeFiles/edit_cache.dir
+L:/Work_and_Homework/Work/Personal/ErgoMag/ErgoMag_Mini/build/elf2uf2/boot_uf2_headers/CMakeFiles/rebuild_cache.dir
