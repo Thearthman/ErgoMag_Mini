@@ -1,0 +1,13 @@
+# Target labels
+ ELF2UF2Build
+# Source files and their labels
+L:/Work_and_Homework/Work/Personal/ErgoMag/ErgoMag_Mini/build/CMakeFiles/ELF2UF2Build
+L:/Work_and_Homework/Work/Personal/ErgoMag/ErgoMag_Mini/build/CMakeFiles/ELF2UF2Build.rule
+L:/Work_and_Homework/Work/Personal/ErgoMag/ErgoMag_Mini/build/CMakeFiles/ELF2UF2Build-complete.rule
+L:/Work_and_Homework/Work/Personal/ErgoMag/ErgoMag_Mini/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build.rule
+L:/Work_and_Homework/Work/Personal/ErgoMag/ErgoMag_Mini/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure.rule
+L:/Work_and_Homework/Work/Personal/ErgoMag/ErgoMag_Mini/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download.rule
+L:/Work_and_Homework/Work/Personal/ErgoMag/ErgoMag_Mini/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install.rule
+L:/Work_and_Homework/Work/Personal/ErgoMag/ErgoMag_Mini/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir.rule
+L:/Work_and_Homework/Work/Personal/ErgoMag/ErgoMag_Mini/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch.rule
+L:/Work_and_Homework/Work/Personal/ErgoMag/ErgoMag_Mini/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update.rule

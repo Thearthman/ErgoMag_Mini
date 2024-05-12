@@ -1,0 +1,3 @@
+L:/Work_and_Homework/Work/Personal/ErgoMag/ErgoMag_Mini/Code/ErgoMag/build/pioasm/CMakeFiles/pioasm.dir
+L:/Work_and_Homework/Work/Personal/ErgoMag/ErgoMag_Mini/Code/ErgoMag/build/pioasm/CMakeFiles/edit_cache.dir
+L:/Work_and_Homework/Work/Personal/ErgoMag/ErgoMag_Mini/Code/ErgoMag/build/pioasm/CMakeFiles/rebuild_cache.dir
