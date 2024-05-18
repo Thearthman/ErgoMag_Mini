@@ -14,7 +14,10 @@ float max_travel[4][16];
 
 
 float readChannel(uint8_t multiplexer_address, uint8_t channel) {
-
+   //Validdate Multiplexer Address
+   if (multiplexer_address > 5) {
+      return 0;
+   }
    for (int i = 0; i < 4; i++) {
       gpio_put(multiplexer_select_addresses[i], bit_mask[channel][i]);
    }
@@ -34,45 +37,39 @@ void setMaxTravel(){
    max_travel[1][3] = readChannel(1,3);
 }
 
+// Return true if key is pressed.
+bool testMultiplexer() {
+   float voltage0 = readChannel(1, 0);
+   float voltage1 = readChannel(1, 1);
+   float voltage2 = readChannel(1, 2);
+   float voltage3 = readChannel(1, 3);
+   printf("Voltage0: %f Max Travel: %f\n", voltage0, max_travel[1][0]);
+   printf("Voltage1: %f Max Travel: %f\n", voltage1, max_travel[1][1]);
+   printf("Voltage2: %f Max Travel: %f\n", voltage2, max_travel[1][2]);
+   printf("Voltage3: %f Max Travel: %f\n", voltage3, max_travel[1][3]);
+   return  voltage0 < max_travel[1][0]*0.8 || voltage1 < max_travel[1][1]*0.8 || voltage2 < max_travel[1][2]*0.8 || voltage3 < max_travel[1][3]*0.8;
+}
+
 int main() {
-
-   stdio_init_all();
-
    const uint led_pin = 15;
-   float threshold = 2.7f;
-
+   stdio_init_all();
    gpio_init(led_pin);
    gpio_set_dir(led_pin, GPIO_OUT);
    adc_init();
-   
    for (int i = 0; i < 4; i++) {
       adc_gpio_init(multiplexer_input_addresses[i]);
       gpio_init(multiplexer_select_addresses[i]);
       gpio_set_dir(multiplexer_select_addresses[i], GPIO_OUT);
    }
-
    setMaxTravel();
 
    while (1) {
-      float voltage0 = readChannel(1, 0);
-      float voltage1 = readChannel(1, 1);
-      float voltage2 = readChannel(1, 2);
-      float voltage3 = readChannel(1, 3);
-      printf("Voltage0: %f Max Travel: %f\n", voltage0, max_travel[1][0]);
-      printf("Voltage1: %f Max Travel: %f\n", voltage1, max_travel[1][1]);
-      printf("Voltage2: %f Max Travel: %f\n", voltage2, max_travel[1][2]);
-      printf("Voltage3: %f Max Travel: %f\n", voltage3, max_travel[1][3]);
-      // printf("Voltage1: %f\n", voltage1);
-      // printf("Voltage2: %f\n", voltage2);
-      // printf("Voltage3: %f\n", voltage3);
-      // printf("Max Travel: %f\n", max_travel);
-
-      if (voltage0 < max_travel[1][0]*0.8 || voltage1 < max_travel[1][1]*0.8 || voltage2 < max_travel[1][2]*0.8 || voltage3 < max_travel[1][3]*0.8 ) {
+      bool key_pressed = testMultiplexer();
+      if (key_pressed) {
          gpio_put (led_pin, 1);
       } else {
          gpio_put (led_pin, 0); 
       }
       sleep_ms(100);
    }
-
 }
