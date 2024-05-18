@@ -180,14 +180,10 @@
 				{
 					"name" : "HELPSTRING",
 					"value" : "No help, variable specified on the command line."
-				},
-				{
-					"name" : "STRINGS",
-					"value" : "Debug;Release;MinSizeRel;RelWithDebInfo"
 				}
 			],
 			"type" : "STRING",
-			"value" : "Debug"
+			"value" : "Release"
 		},
 		{
 			"name" : "CMAKE_CACHEFILE_DIR",
@@ -199,7 +195,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "l:/Work_and_Homework/Work/Personal/ErgoMag/ErgoMag_Mini/Code/ErgoMag/build"
+			"value" : "l:/Work_and_Homework/Work/Personal/ErgoMag/ErgoMag_Mini/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -699,7 +695,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "L:/Work_and_Homework/Work/Personal/ErgoMag/ErgoMag_Mini/Code/ErgoMag/build/CMakeFiles/pkgRedirects"
+			"value" : "L:/Work_and_Homework/Work/Personal/ErgoMag/ErgoMag_Mini/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -1331,7 +1327,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "L:/Work_and_Homework/Work/Personal/ErgoMag/ErgoMag_Mini/Code/ErgoMag/build"
+			"value" : "L:/Work_and_Homework/Work/Personal/ErgoMag/ErgoMag_Mini/build"
 		},
 		{
 			"name" : "ErgoMag_IS_TOP_LEVEL",
@@ -1535,7 +1531,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : " C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/cmsis C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/cmsis C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/cmsis C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/cmsis C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/cmsis C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/cmsis C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/cmsis C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/cmsis C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs"
+			"value" : " C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/cmsis C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/cmsis C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/cmsis C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/cmsis C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/cmsis C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/cmsis C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/cmsis C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/cmsis C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/cmsis C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/cmsis C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/cmsis C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/cmsis C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/cmsis C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/cmsis C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs"
 		},
 		{
 			"name" : "PICO_DOXYGEN_PATHS",
@@ -1823,7 +1819,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "L:/Work_and_Homework/Work/Personal/ErgoMag/ErgoMag_Mini/Code/ErgoMag/build/pico-sdk"
+			"value" : "L:/Work_and_Homework/Work/Personal/ErgoMag/ErgoMag_Mini/build/pico-sdk"
 		},
 		{
 			"name" : "pico_sdk_IS_TOP_LEVEL",

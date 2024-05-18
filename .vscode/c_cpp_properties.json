@@ -4,7 +4,8 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "C:/VSARM/sdk/pico/pico-sdk/src/**"
+                "C:/VSARM/sdk/pico/pico-sdk/src/**",
+                "L:/Work_and_Homework/Work/Personal/ErgoMag/ErgoMag_Mini/Code/RoundRobinTest/**"
             ],
             "defines": [
                 "_DEBUG",

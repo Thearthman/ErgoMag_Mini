@@ -1,23 +1,32 @@
 CMakeFiles/ErgoMag.dir/main.c.obj: \
  L:\Work_and_Homework\Work\Personal\ErgoMag\ErgoMag_Mini\Code\ErgoMag\main.c \
- C:\VSARM\sdk\pico\pico-sdk\src\common\pico_stdlib\include/pico/stdlib.h \
- C:\VSARM\sdk\pico\pico-sdk\src\common\pico_base\include/pico.h \
- C:\VSARM\sdk\pico\pico-sdk\src\common\pico_base\include/pico/types.h \
- C:\VSARM\sdk\pico\pico-sdk\src\common\pico_base\include/pico/assert.h \
- C:/VSARM/armcc/13C7F1~1.2RE/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h \
- C:/VSARM/armcc/13C7F1~1.2RE/arm-none-eabi/include/assert.h \
+ C:/VSARM/armcc/13C7F1~1.2RE/arm-none-eabi/include/stdio.h \
  C:/VSARM/armcc/13C7F1~1.2RE/arm-none-eabi/include/_ansi.h \
  C:/VSARM/armcc/13C7F1~1.2RE/arm-none-eabi/include/newlib.h \
  C:/VSARM/armcc/13C7F1~1.2RE/arm-none-eabi/include/_newlib_version.h \
  C:/VSARM/armcc/13C7F1~1.2RE/arm-none-eabi/include/sys/config.h \
  C:/VSARM/armcc/13C7F1~1.2RE/arm-none-eabi/include/machine/ieeefp.h \
  C:/VSARM/armcc/13C7F1~1.2RE/arm-none-eabi/include/sys/features.h \
+ C:/VSARM/armcc/13C7F1~1.2RE/arm-none-eabi/include/sys/cdefs.h \
+ C:/VSARM/armcc/13C7F1~1.2RE/arm-none-eabi/include/machine/_default_types.h \
+ C:/VSARM/armcc/13C7F1~1.2RE/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
+ C:/VSARM/armcc/13C7F1~1.2RE/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h \
+ C:/VSARM/armcc/13C7F1~1.2RE/arm-none-eabi/include/sys/reent.h \
+ C:/VSARM/armcc/13C7F1~1.2RE/arm-none-eabi/include/_ansi.h \
+ C:/VSARM/armcc/13C7F1~1.2RE/arm-none-eabi/include/sys/_types.h \
+ C:/VSARM/armcc/13C7F1~1.2RE/arm-none-eabi/include/machine/_types.h \
+ C:/VSARM/armcc/13C7F1~1.2RE/arm-none-eabi/include/sys/lock.h \
+ C:/VSARM/armcc/13C7F1~1.2RE/arm-none-eabi/include/sys/stdio.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\common\pico_stdlib\include/pico/stdlib.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\common\pico_base\include/pico.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\common\pico_base\include/pico/types.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\common\pico_base\include/pico/assert.h \
+ C:/VSARM/armcc/13C7F1~1.2RE/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h \
+ C:/VSARM/armcc/13C7F1~1.2RE/arm-none-eabi/include/assert.h \
  C:/VSARM/armcc/13C7F1~1.2RE/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h \
  C:/VSARM/armcc/13C7F1~1.2RE/arm-none-eabi/include/stdint.h \
- C:/VSARM/armcc/13C7F1~1.2RE/arm-none-eabi/include/machine/_default_types.h \
  C:/VSARM/armcc/13C7F1~1.2RE/arm-none-eabi/include/sys/_intsup.h \
  C:/VSARM/armcc/13C7F1~1.2RE/arm-none-eabi/include/sys/_stdint.h \
- C:/VSARM/armcc/13C7F1~1.2RE/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
  L:\Work_and_Homework\Work\Personal\ErgoMag\ErgoMag_Mini\Code\ErgoMag\build\generated\pico_base/pico/version.h \
  C:\VSARM\sdk\pico\pico-sdk\src\common\pico_base\include/pico/config.h \
  L:\Work_and_Homework\Work\Personal\ErgoMag\ErgoMag_Mini\Code\ErgoMag\build\generated\pico_base/pico/config_autogen.h \
@@ -27,7 +36,6 @@ CMakeFiles/ErgoMag.dir/main.c.obj: \
  C:\VSARM\sdk\pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/platform_defs.h \
  C:\VSARM\sdk\pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/addressmap.h \
  C:\VSARM\sdk\pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/sio.h \
- C:/VSARM/armcc/13C7F1~1.2RE/arm-none-eabi/include/sys/cdefs.h \
  C:\VSARM\sdk\pico\pico-sdk\src\common\pico_base\include/pico/types.h \
  C:\VSARM\sdk\pico\pico-sdk\src\common\pico_base\include/pico/error.h \
  C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_stdio\include/pico/stdio.h \
@@ -54,11 +62,13 @@ CMakeFiles/ErgoMag.dir/main.c.obj: \
  C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_adc\include/hardware/adc.h \
  C:\VSARM\sdk\pico\pico-sdk\src\rp2040\hardware_structs\include/hardware/structs/adc.h \
  C:\VSARM\sdk\pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/adc.h \
- C:/VSARM/armcc/13C7F1~1.2RE/arm-none-eabi/include/stdio.h \
- C:/VSARM/armcc/13C7F1~1.2RE/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h \
- C:/VSARM/armcc/13C7F1~1.2RE/arm-none-eabi/include/sys/reent.h \
- C:/VSARM/armcc/13C7F1~1.2RE/arm-none-eabi/include/_ansi.h \
- C:/VSARM/armcc/13C7F1~1.2RE/arm-none-eabi/include/sys/_types.h \
- C:/VSARM/armcc/13C7F1~1.2RE/arm-none-eabi/include/machine/_types.h \
- C:/VSARM/armcc/13C7F1~1.2RE/arm-none-eabi/include/sys/lock.h \
- C:/VSARM/armcc/13C7F1~1.2RE/arm-none-eabi/include/sys/stdio.h
+ C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_dma\include/hardware/dma.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\rp2040\hardware_structs\include/hardware/structs/dma.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/dma.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_multicore\include/pico/multicore.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\common\pico_sync\include/pico/sync.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\common\pico_sync\include/pico/sem.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\common\pico_sync\include/pico/lock_core.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_sync\include/hardware/sync.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\common\pico_sync\include/pico/mutex.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\common\pico_sync\include/pico/critical_section.h

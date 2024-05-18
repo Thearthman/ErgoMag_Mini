@@ -18,5 +18,4 @@ pico_enable_stdio_uart(${PROJECT_NAME} 0)
 
 pico_add_extra_outputs(${PROJECT_NAME})
 
-target_link_libraries(${PROJECT_NAME} pico_stdlib hardware_adc )
- 
+target_link_libraries(${PROJECT_NAME} pico_stdlib hardware_adc hardware_dma pico_multicore hardware_regs)

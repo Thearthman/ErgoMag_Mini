@@ -1,75 +1,86 @@
+#include  <stdio.h>
 #include "pico/stdlib.h"
 #include "hardware/adc.h"
-#include "stdio.h"
-
-const bool bit_mask[16][4] = {{0,0,0,0},{1,0,0,0},{0,1,0,0},{1,1,0,0},{0,0,1,0},{1,0,1,0},{0,1,1,0},{1,1,1,0},
-                        {0,0,0,1},{1,0,0,1},{0,1,0,1},{1,1,0,1},{0,0,1,1},{1,0,1,1},{0,1,1,1},{1,1,1,1}};
-const uint multiplexer_select_addresses[4] = {2, 3, 4, 5};
-const uint multiplexer_input_addresses[4] = {26, 27, 28, 29};
-uint current_multipler_address = 0;
-
-//Max Travel of each switch
-float max_travel[4][16];
+#include "hardware/dma.h"
+#include "pico/multicore.h"
+#include "hardware/regs/dreq.h"
 
 
+#define ADC_MASK 0x03
+#define ADC_CLK 48000000
+#define SAMPLE_RATE 60
+#define SAMPLE_NUM 2
 
-float readChannel(uint8_t multiplexer_address, uint8_t channel) {
-   //Validdate Multiplexer Address
-   if (multiplexer_address > 5) {
-      return 0;
-   }
-   for (int i = 0; i < 4; i++) {
-      gpio_put(multiplexer_select_addresses[i], bit_mask[channel][i]);
-   }
-   if (multiplexer_address!= current_multipler_address) {
-      adc_select_input(multiplexer_address);
-      current_multipler_address = multiplexer_address;
-   }
-   uint16_t reading = adc_read();
-   float voltage = (float)reading * 3.3 / (1 << 12);
-   return voltage;
-}
+uint8_t sample_array[SAMPLE_NUM];
+uint8_t * sample_array_pointer = &sample_array[0];
 
-void setMaxTravel(){
-   max_travel[1][0] = readChannel(1,0);
-   max_travel[1][1] = readChannel(1,1);
-   max_travel[1][2] = readChannel(1,2);
-   max_travel[1][3] = readChannel(1,3);
-}
 
-// Return true if key is pressed.
-bool testMultiplexer() {
-   float voltage0 = readChannel(1, 0);
-   float voltage1 = readChannel(1, 1);
-   float voltage2 = readChannel(1, 2);
-   float voltage3 = readChannel(1, 3);
-   printf("Voltage0: %f Max Travel: %f\n", voltage0, max_travel[1][0]);
-   printf("Voltage1: %f Max Travel: %f\n", voltage1, max_travel[1][1]);
-   printf("Voltage2: %f Max Travel: %f\n", voltage2, max_travel[1][2]);
-   printf("Voltage3: %f Max Travel: %f\n", voltage3, max_travel[1][3]);
-   return  voltage0 < max_travel[1][0]*0.8 || voltage1 < max_travel[1][1]*0.8 || voltage2 < max_travel[1][2]*0.8 || voltage3 < max_travel[1][3]*0.8;
-}
 
 int main() {
-   const uint led_pin = 15;
    stdio_init_all();
-   gpio_init(led_pin);
-   gpio_set_dir(led_pin, GPIO_OUT);
-   adc_init();
-   for (int i = 0; i < 4; i++) {
-      adc_gpio_init(multiplexer_input_addresses[i]);
-      gpio_init(multiplexer_select_addresses[i]);
-      gpio_set_dir(multiplexer_select_addresses[i], GPIO_OUT);
-   }
-   setMaxTravel();
+   
+   // ADC SETUP
+   //
+   adc_gpio_init(26);
+   adc_gpio_init(27);
+   adc_init(); 
+   adc_set_round_robin(ADC_MASK); 
+   adc_select_input(0);
+   adc_fifo_setup(
+      true,
+      true,
+      1,
+      false,
+      true
+   );
+   adc_set_clkdiv(ADC_CLK/SAMPLE_RATE);
+   // adc_set_clkdiv(0); 
+   adc_fifo_drain();
 
-   while (1) {
-      bool key_pressed = testMultiplexer();
-      if (key_pressed) {
-         gpio_put (led_pin, 1);
-      } else {
-         gpio_put (led_pin, 0); 
-      }
-      sleep_ms(100);
+   //
+   // DMA SETUP
+   //
+   int sample_chan0 = 0;
+   int ctrl_chan = 1;
+
+   //
+   // Setup SAMEPLE channel
+   //
+   dma_channel_config c0 = dma_channel_get_default_config(sample_chan0);
+   channel_config_set_transfer_data_size(&c0,DMA_SIZE_8);
+   channel_config_set_write_increment(&c0,true);
+   channel_config_set_read_increment(&c0,false);
+   channel_config_set_dreq(&c0,DREQ_ADC);
+   dma_channel_configure(sample_chan0,
+      &c0,
+      sample_array,
+      &adc_hw->fifo,
+      SAMPLE_NUM,
+      false
+   );
+
+   //
+   // Setup CONTROL channel
+   //
+   dma_channel_config ctrl = dma_channel_get_default_config(ctrl_chan);
+   channel_config_set_transfer_data_size(&ctrl,DMA_SIZE_32);
+   channel_config_set_write_increment(&ctrl,false);
+   channel_config_set_read_increment(&ctrl,false);
+   channel_config_set_chain_to(&ctrl,sample_chan0);
+   dma_channel_configure(ctrl_chan,
+      &ctrl,
+      &dma_hw->ch[sample_chan0].write_addr,
+      &sample_array_pointer,
+      1,
+      false
+   );
+
+   adc_run(true);
+
+   while (true) 
+   {  
+      dma_channel_wait_for_finish_blocking(sample_chan0);
+      dma_channel_start(ctrl_chan);
+      printf("ADC vals:%03d, %03d\r",sample_array[0],sample_array[1]);
    }
 }

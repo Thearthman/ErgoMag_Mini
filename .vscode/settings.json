@@ -1,3 +1,12 @@
 {
-    "cmake.sourceDirectory": "L:/Work_and_Homework/Work/Personal/ErgoMag/ErgoMag_Mini/Code/ErgoMag"
+    "cmake.sourceDirectory": "L:/Work_and_Homework/Work/Personal/ErgoMag/ErgoMag_Mini/Code/ErgoMag",
+    "C_Cpp.errorSquiggles": "disabled",
+    "C_Cpp.default.compilerPath": "c:/vsarm/armcc/13.2 rel1/bin/arm-none-eabi-g++.exe",
+    "files.associations": {
+        "*.c": "c",
+        "stdio.h": "c",
+        "adc.h": "c",
+        "stdlib.h": "c",
+        "dreq.h": "c"
+    }
 }

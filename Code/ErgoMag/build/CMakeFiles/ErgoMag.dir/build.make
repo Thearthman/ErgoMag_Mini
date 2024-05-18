@@ -1037,6 +1037,34 @@ CMakeFiles/ErgoMag.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_adc/ad
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ErgoMag.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s"
 	C:\VSARM\armcc\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_adc\adc.c -o CMakeFiles\ErgoMag.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_adc\adc.c.s
 
+CMakeFiles/ErgoMag.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj: CMakeFiles/ErgoMag.dir/flags.make
+CMakeFiles/ErgoMag.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c
+CMakeFiles/ErgoMag.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj: CMakeFiles/ErgoMag.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=L:\Work_and_Homework\Work\Personal\ErgoMag\ErgoMag_Mini\Code\ErgoMag\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/ErgoMag.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj"
+	C:\VSARM\armcc\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ErgoMag.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj -MF CMakeFiles\ErgoMag.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_dma\dma.c.obj.d -o CMakeFiles\ErgoMag.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_dma\dma.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_dma\dma.c
+
+CMakeFiles/ErgoMag.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ErgoMag.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i"
+	C:\VSARM\armcc\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_dma\dma.c > CMakeFiles\ErgoMag.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_dma\dma.c.i
+
+CMakeFiles/ErgoMag.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ErgoMag.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s"
+	C:\VSARM\armcc\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_dma\dma.c -o CMakeFiles\ErgoMag.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_dma\dma.c.s
+
+CMakeFiles/ErgoMag.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj: CMakeFiles/ErgoMag.dir/flags.make
+CMakeFiles/ErgoMag.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c
+CMakeFiles/ErgoMag.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj: CMakeFiles/ErgoMag.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=L:\Work_and_Homework\Work\Personal\ErgoMag\ErgoMag_Mini\Code\ErgoMag\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/ErgoMag.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj"
+	C:\VSARM\armcc\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ErgoMag.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj -MF CMakeFiles\ErgoMag.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.obj.d -o CMakeFiles\ErgoMag.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c
+
+CMakeFiles/ErgoMag.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ErgoMag.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i"
+	C:\VSARM\armcc\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c > CMakeFiles\ErgoMag.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.i
+
+CMakeFiles/ErgoMag.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ErgoMag.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s"
+	C:\VSARM\armcc\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c -o CMakeFiles\ErgoMag.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.s
+
 # Object files for target ErgoMag
 ErgoMag_OBJECTS = \
 "CMakeFiles/ErgoMag.dir/main.c.obj" \
@@ -1108,7 +1136,9 @@ ErgoMag_OBJECTS = \
 "CMakeFiles/ErgoMag.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj" \
 "CMakeFiles/ErgoMag.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj" \
 "CMakeFiles/ErgoMag.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj" \
-"CMakeFiles/ErgoMag.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj"
+"CMakeFiles/ErgoMag.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj" \
+"CMakeFiles/ErgoMag.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj" \
+"CMakeFiles/ErgoMag.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj"
 
 # External object files for target ErgoMag
 ErgoMag_EXTERNAL_OBJECTS =
@@ -1183,11 +1213,13 @@ ErgoMag.elf: CMakeFiles/ErgoMag.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/t
 ErgoMag.elf: CMakeFiles/ErgoMag.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 ErgoMag.elf: CMakeFiles/ErgoMag.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 ErgoMag.elf: CMakeFiles/ErgoMag.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+ErgoMag.elf: CMakeFiles/ErgoMag.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+ErgoMag.elf: CMakeFiles/ErgoMag.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
 ErgoMag.elf: CMakeFiles/ErgoMag.dir/build.make
 ErgoMag.elf: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 ErgoMag.elf: CMakeFiles/ErgoMag.dir/objects1.rsp
 ErgoMag.elf: CMakeFiles/ErgoMag.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=L:\Work_and_Homework\Work\Personal\ErgoMag\ErgoMag_Mini\Code\ErgoMag\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Linking CXX executable ErgoMag.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=L:\Work_and_Homework\Work\Personal\ErgoMag\ErgoMag_Mini\Code\ErgoMag\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Linking CXX executable ErgoMag.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\ErgoMag.dir\link.txt --verbose=$(VERBOSE)
 	"C:\VSARM\armcc\13.2 Rel1\bin\arm-none-eabi-objcopy.exe" -Oihex L:/Work_and_Homework/Work/Personal/ErgoMag/ErgoMag_Mini/Code/ErgoMag/build/ErgoMag.elf ErgoMag.hex
 	"C:\VSARM\armcc\13.2 Rel1\bin\arm-none-eabi-objcopy.exe" -Obinary L:/Work_and_Homework/Work/Personal/ErgoMag/ErgoMag_Mini/Code/ErgoMag/build/ErgoMag.elf ErgoMag.bin

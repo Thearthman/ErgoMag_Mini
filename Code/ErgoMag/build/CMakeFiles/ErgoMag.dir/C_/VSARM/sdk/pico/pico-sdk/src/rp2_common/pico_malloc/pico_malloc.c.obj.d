@@ -37,4 +37,12 @@ CMakeFiles/ErgoMag.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_malloc/pic
  C:\VSARM\sdk\pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/sio.h \
  C:\VSARM\sdk\pico\pico-sdk\src\common\pico_base\include/pico/types.h \
  C:\VSARM\sdk\pico\pico-sdk\src\common\pico_base\include/pico/error.h \
- C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_malloc\include/pico/malloc.h
+ C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_malloc\include/pico/malloc.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\common\pico_sync\include/pico/mutex.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\common\pico_sync\include/pico/lock_core.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\common\pico_time\include/pico/time.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_timer\include/hardware/timer.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\rp2040\hardware_structs\include/hardware/structs/timer.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_base\include/hardware/address_mapped.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/timer.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_sync\include/hardware/sync.h

@@ -1135,49 +1135,49 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ELF2UF2Build::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ELF2UF2Build-Debug-de900926cf744c4a4bda.json",
+					"jsonFile" : "target-ELF2UF2Build-Debug-71bd399c375c0d588266.json",
 					"name" : "ELF2UF2Build",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "ErgoMag::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ErgoMag-Debug-a512df624741c7e13b1b.json",
+					"jsonFile" : "target-ErgoMag-Debug-525e02ce589dd5a2d585.json",
 					"name" : "ErgoMag",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 66,
 					"id" : "PioasmBuild::@c2fb4f534018e64680d5",
-					"jsonFile" : "target-PioasmBuild-Debug-b0b67c11d1bc1f638f47.json",
+					"jsonFile" : "target-PioasmBuild-Debug-cdbdd10fee38125a916a.json",
 					"name" : "PioasmBuild",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 43,
 					"id" : "bs2_default::@bc554eaed616d198a22d",
-					"jsonFile" : "target-bs2_default-Debug-073a0341fc6c3c896e5b.json",
+					"jsonFile" : "target-bs2_default-Debug-0c8a94c822f01684eaae.json",
 					"name" : "bs2_default",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 43,
 					"id" : "bs2_default_bin::@bc554eaed616d198a22d",
-					"jsonFile" : "target-bs2_default_bin-Debug-86e39b9ff6c6b1017b73.json",
+					"jsonFile" : "target-bs2_default_bin-Debug-8c8fa496b6ccc9e35006.json",
 					"name" : "bs2_default_bin",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 43,
 					"id" : "bs2_default_padded_checksummed_asm::@bc554eaed616d198a22d",
-					"jsonFile" : "target-bs2_default_padded_checksummed_asm-Debug-420511639cd5c31ee541.json",
+					"jsonFile" : "target-bs2_default_padded_checksummed_asm-Debug-d678d05a9f340095331a.json",
 					"name" : "bs2_default_padded_checksummed_asm",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 66,
 					"id" : "cyw43_driver_picow_cyw43_bus_pio_spi_pio_h::@c2fb4f534018e64680d5",
-					"jsonFile" : "target-cyw43_driver_picow_cyw43_bus_pio_spi_pio_h-Debug-70126f60314742ecccab.json",
+					"jsonFile" : "target-cyw43_driver_picow_cyw43_bus_pio_spi_pio_h-Debug-64b6e65c18f900bdfd0e.json",
 					"name" : "cyw43_driver_picow_cyw43_bus_pio_spi_pio_h",
 					"projectIndex" : 1
 				}
@@ -1187,7 +1187,7 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "L:/Work_and_Homework/Work/Personal/ErgoMag/ErgoMag_Mini/build",
+		"build" : "L:/Work_and_Homework/Work/Personal/ErgoMag/ErgoMag_Mini/Code/ErgoMag/build",
 		"source" : "L:/Work_and_Homework/Work/Personal/ErgoMag/ErgoMag_Mini/Code/ErgoMag"
 	},
 	"version" : 
