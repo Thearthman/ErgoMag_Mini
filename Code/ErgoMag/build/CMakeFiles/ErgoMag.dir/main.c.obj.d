@@ -17,6 +17,9 @@ CMakeFiles/ErgoMag.dir/main.c.obj: \
  C:/VSARM/armcc/13C7F1~1.2RE/arm-none-eabi/include/machine/_types.h \
  C:/VSARM/armcc/13C7F1~1.2RE/arm-none-eabi/include/sys/lock.h \
  C:/VSARM/armcc/13C7F1~1.2RE/arm-none-eabi/include/sys/stdio.h \
+ C:/VSARM/armcc/13C7F1~1.2RE/arm-none-eabi/include/stdlib.h \
+ C:/VSARM/armcc/13C7F1~1.2RE/arm-none-eabi/include/machine/stdlib.h \
+ C:/VSARM/armcc/13C7F1~1.2RE/arm-none-eabi/include/alloca.h \
  C:\VSARM\sdk\pico\pico-sdk\src\common\pico_stdlib\include/pico/stdlib.h \
  C:\VSARM\sdk\pico\pico-sdk\src\common\pico_base\include/pico.h \
  C:\VSARM\sdk\pico\pico-sdk\src\common\pico_base\include/pico/types.h \

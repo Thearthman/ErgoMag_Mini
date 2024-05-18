@@ -7,6 +7,7 @@
         "stdio.h": "c",
         "adc.h": "c",
         "stdlib.h": "c",
-        "dreq.h": "c"
+        "dreq.h": "c",
+        "multicore.h": "c"
     }
 }
