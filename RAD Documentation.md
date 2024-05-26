@@ -7,8 +7,8 @@
 
 # Design
 Into five sections
-1. ADC Reading
-2. Multiplexer
+1. ADC Reading DONE
+2. Multiplexer DONE
 3. Bluetooth
 4. Keypress Detection
 5. USB communication
